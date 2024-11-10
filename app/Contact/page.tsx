@@ -1,15 +1,9 @@
 import { TextSlab } from "../components";
 import { ContactForm } from "../components";
 
-export interface contactProps {
-    firstName: string;
-    lastName: string;
-    email: string;
-    subject: string;
-    message: string;
-}
 
-export default function Contact({ firstName, lastName, email, subject, message }: contactProps) {
+
+export default function Contact() {
     return (
         <div className="flex justify-center items-center min-h-screen bg-gray-200">
             <div className="flex space-x-3 p-4  ">
@@ -37,13 +31,7 @@ export default function Contact({ firstName, lastName, email, subject, message }
 
                 
                 <div className=" p-4 rounded-md ">
-                    <ContactForm
-                        firstName={firstName}
-                        lastName={lastName}
-                        email={email}
-                        subject={subject}
-                        message={message}
-                    />
+                   <ContactForm/>
                 </div>
             </div>
         </div>

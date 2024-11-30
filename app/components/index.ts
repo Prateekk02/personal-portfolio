@@ -4,6 +4,7 @@ import Homepage from "./Homepage";
 import SectionBtn from "./Buttons/SectionBtn";
 import TextSlab from "./ContactComponent/TextSlab";
 import ContactForm from "./ContactComponent/ContactForm"
+import ProjectHeader from "./ProjectHeader/ProjectHeader";
 
 
 export{
@@ -12,5 +13,6 @@ export{
     Homepage,
     SectionBtn,
     TextSlab,
-    ContactForm
+    ContactForm,
+    ProjectHeader
 }

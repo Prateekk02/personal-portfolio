@@ -8,7 +8,7 @@ export default function Header() {
     const router = useRouter();
     return (
         <>
-            <div className="bg-slate-200">
+            <div className="bg-slate-300">
                 <header className="flex justify-between items-center mx-auto max-w-screen-lg p-4">
                     
                     <div className="flex items-center">

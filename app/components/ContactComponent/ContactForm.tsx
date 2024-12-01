@@ -51,7 +51,7 @@ export default function ContactForm() {
         <form onSubmit={handleSubmit} className="p-4 space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm font-semibold">First Name*</label>
+                    <label className="mb-1 text-sm font-semibold text-white">First Name*</label>
                     <input
                         type="text"
                         className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -61,7 +61,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm font-semibold">Last Name*</label>
+                    <label className="mb-1 text-sm text-white font-semibold">Last Name*</label>
                     <input
                         type="text"
                         className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -74,7 +74,7 @@ export default function ContactForm() {
 
             <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm font-semibold">Email*</label>
+                    <label className="mb-1 text-sm text-white font-semibold">Email*</label>
                     <input
                         type="email"
                         className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -84,7 +84,7 @@ export default function ContactForm() {
                     />
                 </div>
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm font-semibold">Subject</label>
+                    <label className="mb-1 text-sm text-white font-semibold">Subject</label>
                     <input
                         type="text"
                         className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
@@ -95,7 +95,7 @@ export default function ContactForm() {
             </div>
 
             <div className="flex flex-col w-full">
-                <label className="mb-1 text-sm font-semibold">Message</label>
+                <label className="mb-1 text-sm text-white font-semibold">Message</label>
                 <textarea
                     className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows="5"

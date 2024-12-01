@@ -5,6 +5,11 @@ import SectionBtn from "./Buttons/SectionBtn";
 import TextSlab from "./ContactComponent/TextSlab";
 import ContactForm from "./ContactComponent/ContactForm"
 import ProjectHeader from "./ProjectHeader/ProjectHeader";
+import ResumeSection from "./ResumeSection/ResumeSection";
+import ResumeHeader from "./ResumeSection/ResumeHeader";
+import Btn from "./Buttons/Btn";
+import SocialBtn from "./Buttons/SocialBtn";
+import ProjectBtn from "./Buttons/ProjectBtn";
 
 
 export{
@@ -14,5 +19,10 @@ export{
     SectionBtn,
     TextSlab,
     ContactForm,
-    ProjectHeader
+    ProjectHeader,
+    ResumeSection,
+    ResumeHeader,
+    Btn,
+    SocialBtn,
+    ProjectBtn,
 }

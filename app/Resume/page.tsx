@@ -3,10 +3,9 @@ import { ResumeSection,ResumeHeader } from "../components"
 
 
 export default function Resume(){
-
     
     return<>
-        <div className="text-3xl h-screen bg-gray-300">
+        <div className="flex flex-col min-h-screen bg-gray-300">
             <ResumeHeader />
             <ResumeSection />
             {/* <BackgroundBeams/> */}

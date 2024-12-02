@@ -15,7 +15,7 @@ export default function Header() {
                         <div className="bg-purple-500 rounded-full h-10 w-10 flex items-center justify-center cursor-pointer m-1 transition-transform duration-300 hover:scale-110">
                             
                         </div>
-                        <div onClick={() => router.push('/')} className="text-white font-bold text-3xl ml-4 cursor-pointer transition-transform duration-300 hover:scale-105">
+                        <div onClick={() => router.push('/')} className="bg-gradient-to-br from-purple-200 via-purple-300 to-purple-500 text-transparent bg-clip-text font-bold text-3xl ml-4 cursor-pointer transition-transform duration-300 hover:scale-105">
                             Prateek Kumar
                         </div>
                         
@@ -23,15 +23,15 @@ export default function Header() {
 
                     
                     <div className="hidden md:flex items-center space-x-4">
-                        <button onClick = {() => router.push('/Resume')} className="text-white cursor-pointer transition-all duration-300 hover:text-violet-500 font-semibold hover:scale-105">
+                        <button onClick = {() => router.push('/Resume')} className="bg-gradient-to-br from-purple-100 via-purple-200 to-purple-400 text-transparent bg-clip-text cursor-pointer transition-all duration-300 hover:text-teal-200 font-semibold hover:scale-105">
                             Resume
                         </button>
                         <span className="text-gray-400">|</span>
-                        <button onClick = {() => router.push('/Projects')} className="text-white cursor-pointer transition-all duration-300 hover:text-violet-500 font-semibold hover:scale-105">
+                        <button onClick = {() => router.push('/Projects')} className="bg-gradient-to-br from-purple-100 via-purple-200 to-purple-400 text-transparent bg-clip-text cursor-pointer transition-all duration-300 hover:text-teal-200 font-semibold hover:scale-105">
                             Projects
                         </button>
                         <span className="text-gray-400">|</span>
-                        <button onClick = {() => router.push('/Contact')} className="text-white cursor-pointer transition-all duration-300 hover:text-violet-500 font-semibold hover:scale-105">
+                        <button onClick = {() => router.push('/Contact')} className="bg-gradient-to-br from-purple-100 via-purple-200 to-purple-400 text-transparent bg-clip-text cursor-pointer transition-all duration-300 hover:text-teal-200 font-semibold hover:scale-105">
                             Contact
                         </button>
                     </div>

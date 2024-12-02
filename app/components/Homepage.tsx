@@ -32,11 +32,11 @@ export default function Homepage() {
                 <div className="flex flex-col items-center md:items-start w-full md:w-1/3 m-5">                   
                     
                     <div className="text-4xl md:text-7xl font-semibold px-5 pb-5 text-center md:text-left">
-                        <FlipWords words={words} />
+                        <FlipWords  words={words} />
                     </div>                    
                     
                     <div className="px-5 py-3">
-                        <div className="text-gray-300 text-lg md:text-xl font-semibold">A bit about me</div>
+                        <div className="bg-gradient-to-r from-purple-100 via-purple-200 to-purple-400 text-transparent bg-clip-text text-lg md:text-xl font-semibold">A bit about me</div>
                         <div className="text-gray-300 text-justify font-thin">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias earum veniam totam magnam voluptate, pariatur ducimus facilis, voluptas numquam sint explicabo aperiam expedita deserunt culpa assumenda porro placeat eum?
                         </div>

@@ -10,6 +10,8 @@ import ResumeHeader from "./ResumeSection/ResumeHeader";
 import Btn from "./Buttons/Btn";
 import SocialBtn from "./Buttons/SocialBtn";
 import ProjectBtn from "./Buttons/ProjectBtn";
+import { ResumeCard, ResumeCardHeader } from "./ResumeSection/ResumeCard";
+
 
 
 export{
@@ -25,4 +27,7 @@ export{
     Btn,
     SocialBtn,
     ProjectBtn,
+    ResumeCard,
+    ResumeCardHeader,
+    
 }

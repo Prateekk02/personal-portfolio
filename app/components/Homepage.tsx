@@ -2,6 +2,7 @@ import SectionBtn from "./Buttons/SectionBtn";
 import { Meteors } from "./ui/meteors";
 import { FlipWords } from "./ui/flip-words";
 import Image from "next/image";
+// import { BackgroundBeams } from "./ui/background-beams";
 
 const words = ["Namaste", "Hello" , "Ciao","Hola", "Bonjour", "Hallo"]
 
@@ -20,7 +21,7 @@ export default function Homepage() {
                 <Image
                 src="/prateekkumar.jpg"
                 alt="Prateek"
-                className="bg-black rounded-full w-48 h-48 md:w-96 md:h-96"
+                className="bg-black  rounded-full w-48 h-48 md:w-96 md:h-96"
                 width={192}  // 48 * 4 (because w-48 means 12rem, and Image needs actual pixels)
                 height={192} // 48 * 4 (same as width for a square image)
                 sizes="(max-width: 768px) 96px, 192px"  // Optional for responsive image sizing
@@ -53,6 +54,7 @@ export default function Homepage() {
                 </div>
 
                 <Meteors number={15} />
+                
                 
                 
             </div>

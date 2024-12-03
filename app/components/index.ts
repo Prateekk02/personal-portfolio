@@ -10,8 +10,9 @@ import ResumeHeader from "./ResumeSection/ResumeHeader";
 import Btn from "./Buttons/Btn";
 import SocialBtn from "./Buttons/SocialBtn";
 import ProjectBtn from "./Buttons/ProjectBtn";
-import { WorkCard, ResumeCardHeader } from "./ResumeSection/ResumeCard";
+import { WorkCard, ResumeCardHeader, EducationCard, AchievementsCard, CertificateCard } from "./ResumeSection/ResumeCard";
 import Divider from "./Divider";
+ 
 
 
 export{
@@ -30,5 +31,7 @@ export{
     WorkCard,
     ResumeCardHeader,
     Divider,
-    
+    EducationCard,
+    AchievementsCard,
+    CertificateCard,   
 }

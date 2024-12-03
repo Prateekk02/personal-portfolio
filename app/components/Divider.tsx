@@ -1,17 +1,21 @@
 export default function Divider(){
     return <>
 
-        <div className="flex justify-center py-8 animate-pulse items-center gap-12">
-            <div className="bg-gradient-to-r rounded-full from-purple-200  to-purple-300 h-1 w-1 "></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-300  to-purple-400 h-2 w-2"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-400  to-purple-500 h-4 w-4"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-500  to-purple-600 h-6 w-6"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-600 via-purple-700 to-purple-600 h-8 w-8"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-600  to-purple-500 h-6 w-6"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-500  to-purple-400 h-4 w-4"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-400  to-purple-300 h-2 w-2"></div>
-            <div className="bg-gradient-to-r rounded-full from-purple-300  to-purple-200  h-1 w-1"></div>
-        </div>
+<div className="flex justify-center items-center py-8 animate-pulse gap-2 lg:gap-6 xl:gap-8">
+  {[1, 2, 3, 4, 5, 4, 3, 2, 1].map((size, index) => (
+    <div
+      key={index}
+      className={`bg-gradient-to-r from-purple-${200 + size * 100} to-purple-${300 + size * 100} rounded-full`}
+      style={{
+        width: `${size * 0.5}rem`, 
+        height: `${size * 0.5}rem`,
+        animationDelay: `${index * 0.15}s`,
+      }}
+    ></div>
+  ))}
+</div>
+
+
 
     </>
 }

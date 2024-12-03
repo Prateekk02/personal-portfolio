@@ -1,15 +1,15 @@
 import Divider from "../Divider"
 import { Meteors } from "../ui/meteors"   
-import { ResumeCardHeader, WorkCard, EducationCard, AchievementsCard, CertificateCard } from "./ResumeCard"
+import { TitleHeader, WorkCard, EducationCard, AchievementsCard, CertificateCard } from "./ResumeCard"
 
 
 export default function ResumeSection(){
     return <>
     
-        <div className="text-white flex-gr min-h-screen w-full mx-auto bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 p-4">
+        <div className="text-white min-h-screen w-full mx-auto bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 p-4">
         <div className="lg:flex">
             <div className="w-1/4">
-                <ResumeCardHeader label="Work Experience" />
+                <TitleHeader label="Work Experience" />
             </div>
             <div className="w-3/4">
                 {/* Database Call to get workcard details  */}
@@ -35,7 +35,7 @@ export default function ResumeSection(){
 
         <div className="lg:flex">
             <div className="w-1/4">
-                <ResumeCardHeader label="Education" />
+                <TitleHeader label="Education" />
             </div>
             <div className="w-3/4">
                 <EducationCard organization="Lakshmi Narain College of Technology" specialization="B.Tech. in CSE " location="Bhopal" marks="8.63" date="July, 2021 to July, 2025" />               
@@ -43,11 +43,12 @@ export default function ResumeSection(){
                 <EducationCard organization="Lakshmi Narain College of Technology" specialization="B.Tech. in CSE " location="Bhopal" marks="8.63" date="July, 2021 to July, 2025" />               
             </div>
         </div>
+        
         <Divider />  
 
         <div className="lg:flex">
             <div className="w-1/4">
-                <ResumeCardHeader label="Achievements" />
+                <TitleHeader label="Achievements" />
             </div>
             <div className=" w-3/4">
             <AchievementsCard organization="NPTEL" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, repudiandae!" link="google.com" />
@@ -59,7 +60,7 @@ export default function ResumeSection(){
 
         <div className="lg:flex">
             <div className="w-1/4">
-                <ResumeCardHeader label="Achievements" />
+                <TitleHeader label="Certifications" />
             </div>
             <div className=" w-3/4">
             <CertificateCard organization="NPTEL" content="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Vel, repudiandae!" link="google.com" />

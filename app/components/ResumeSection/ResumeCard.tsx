@@ -9,7 +9,7 @@ interface ResumeCardProps{
     role : string
 }
 
-export const ResumeCardHeader = ({label}: {label:string} )=>{
+export const TitleHeader = ({label}: {label:string} )=>{
     return <>
         <div className="flex items-center justify-between w-full pt-10">
         <div className="mx-4">
@@ -53,7 +53,7 @@ export const WorkCard = ({ organization, date, techStack, children, role }: Resu
       </div>
 
       
-      <div className="text-sm px-6 lg:text-base text-purple-100 text-justify leading-loose">
+      <div className="text-md px-6 lg:text-lg text-purple-100 text-justify leading-loose">
         {children}
       </div>
       
@@ -80,25 +80,25 @@ export const EducationCard = ({organization,date,location, marks ,specialization
         <div className="text-lg lg:text-2xl font-semibold text-purple-100">
           {organization}
         </div>
-        <div className="text-sm lg:text-base text-purple-100">
+        <div className="text-md lg:text-lg text-purple-100">
           {date}
         </div>
       </div>
 
       
       <div className="px-6 pt-4 space-y-3">
-        <div className="text-purple-100 text-sm lg:text-base">
+        <div className="text-purple-100 text-md lg:text-lg">
           <span className="font-semibold text-purple-100">Location:</span> {location}
         </div>
 
-        <div className="text-purple-100 text-sm lg:text-base">
+        <div className="text-purple-100 text-md lg:text-lg">
           <span className="font-semibold textpurple-100">Marks/GPA:</span> 
           <span className="bg-purple-100 text-purple-800 text-xs lg:text-sm font-medium px-3 py-1 rounded-lg ml-2 inline-block">
             {marks}
           </span>
         </div>
 
-        <div className="text-purple-100 text-sm lg:text-base">
+        <div className="text-purple-100 text-md lg:text-lg">
           <span className="font-semibold text-purple-100">Specialization:</span> {specialization}
         </div>
       </div>
@@ -122,12 +122,12 @@ export const AchievementsCard = ({ organization, content, link }: AchievementsPr
       </div>
 
       <div className="px-6 pt-4 space-y-3">
-        <div className="text-purple-100 text-sm lg:text-base">
+        <div className="text-purple-100 text-md lg:text-lg">
           <span className="font-semibold text-purple-100">Description:</span> {content}
         </div>
 
         {link && (
-          <div className="text-purple-100 text-sm lg:text-base">
+          <div className="text-purple-100 text-md lg:text-lg">
             
             <a
               href={link}
@@ -163,12 +163,12 @@ export const CertificateCard = ({content,link,organization}:CertificateCardProps
       </div>
 
       <div className="px-6 pt-4 space-y-3">
-        <div className="text-white text-sm lg:text-base">
+        <div className="text-white text-md lg:text-lg">
           <span className="font-semibold text-white">Description:</span> {content}
         </div>
 
         {link && (
-          <div className="text-white text-sm lg:text-base">            
+          <div className="text-white text-md lg:text-lg">            
             <a
               href={link}
               target="_blank"

@@ -2,7 +2,7 @@ import SectionBtn from "./Buttons/SectionBtn";
 import { Meteors } from "./ui/meteors";
 import { FlipWords } from "./ui/flip-words";
 import Image from "next/image";
-// import { BackgroundBeams } from "./ui/background-beams";
+
 
 const words = ["Namaste", "Hello" , "Ciao","Hola", "Bonjour", "Hallo"]
 
@@ -15,18 +15,20 @@ export default function Homepage() {
                           
                 
                 <div className="flex justify-center w-full md:w-auto mb-6 md:mb-0">
-                    {/* <img src={"/prateekkumar.png"} alt="Prateek" className="bg-black rounded-full w-48 h-48 md:w-96 md:h-96" /> */}
+                   {/* <img src={"/prateekkumar.png"} alt="Prateek" className="bg-black rounded-full w-48 h-48 md:w-96 md:h-96" /> */}
                     
-
-                <Image
-                src="/prateekkumar.jpg"
-                alt="Prateek"
-                className="bg-black  rounded-full w-48 h-48 md:w-96 md:h-96"
-                width={192}  // 48 * 4 (because w-48 means 12rem, and Image needs actual pixels)
-                height={192} // 48 * 4 (same as width for a square image)
-                sizes="(max-width: 768px) 96px, 192px"  // Optional for responsive image sizing
-                />
-
+                    <Image
+                        src="/prateekkumar2.png"
+                        alt="Prateek"
+                        className="rounded-full bg-black"
+                        width={432}   // Adjusted to make the image smaller (can change based on your design needs)
+                        height={432}  // Keep it proportional for a square image
+                        quality={100} // Ensures the best quality
+                        priority      // Loads immediately, avoiding blur
+                        sizes="(max-width: 768px) 96px, (max-width: 1200px) 192px, 192px"
+                    />
+                    
+                   
                 </div>               
                 
                 <div className="flex flex-col items-center md:items-start w-full md:w-1/3 m-5">                   

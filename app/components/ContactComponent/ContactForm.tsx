@@ -48,23 +48,23 @@ export default function ContactForm() {
     }
 
     return (
-        <form onSubmit={handleSubmit} className="p-4 space-y-4">
+        <form onSubmit={handleSubmit} className="p-4 shadow-lg space-y-4">
             <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm font-semibold text-white">First Name*</label>
+                    <label className="mb-1 text-sm font-semibold text-[#a1def7]">First Name*</label>
                     <input
                         type="text"
-                        className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="border border-gray-300 text-[#a1def7] bg-gray-900 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
                         value={firstName}
                         onChange={(e) => setFirstName(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm text-white font-semibold">Last Name*</label>
+                    <label className="mb-1 text-sm text-[#a1def7] font-semibold">Last Name*</label>
                     <input
                         type="text"
-                        className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="border border-gray-300 text-[#a1def7] bg-gray-900 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
                         value={lastName}
                         onChange={(e) => setLastName(e.target.value)}
@@ -74,20 +74,20 @@ export default function ContactForm() {
 
             <div className="flex flex-col md:flex-row gap-4">
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm text-white font-semibold">Email*</label>
+                    <label className="mb-1 text-sm text-[#a1def7] font-semibold">Email*</label>
                     <input
                         type="email"
-                        className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="border border-gray-300 text-[#a1def7] bg-gray-900 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         required
                         value={email}
                         onChange={(e) => setEmail(e.target.value)}
                     />
                 </div>
                 <div className="flex flex-col w-full">
-                    <label className="mb-1 text-sm text-white font-semibold">Subject</label>
+                    <label className="mb-1 text-sm text-[#a1def7] font-semibold">Subject</label>
                     <input
                         type="text"
-                        className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                        className="border border-gray-300 p-2 text-[#a1def7] bg-gray-900 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
                         value={subject}
                         onChange={(e) => setSubject(e.target.value)}
                     />
@@ -95,9 +95,9 @@ export default function ContactForm() {
             </div>
 
             <div className="flex flex-col w-full">
-                <label className="mb-1 text-sm text-white font-semibold">Message</label>
+                <label className="mb-1 text-sm text-[#a1def7] font-semibold">Message</label>
                 <textarea
-                    className="border border-gray-300 p-2 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                    className="border border-gray-300 p-2 rounded-md text-[#a1def7] bg-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500"
                     rows="5"
                     value={message}
                     onChange={(e) => setMessage(e.target.value)}
@@ -108,7 +108,7 @@ export default function ContactForm() {
             <button 
                 type="submit" 
                 className="w-full h-12 font-semibold text-lg rounded-full shadow-lg bg-green-500  
-                        hover:bg-white  hover:ring-2 hover:ring-green-500 
+                        hover:bg-black hover:text-white  hover:ring-2 hover:ring-purple-500 
                         transition-all duration-300 ease-in-out"
                 disabled={loading}
                 >

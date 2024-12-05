@@ -2,7 +2,7 @@ export default function Footer() {
     
     return (
         <>
-            <div className="bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 ">
+            <div className="bg-[#070F2B] ">
                 <footer className="flex flex-col md:flex-row bg-black h-28 rounded-t-2xl justify-around items-center  bottom-0 left-0 right-0 border-t-2 border-gray-700 max-w-screen mx-auto p-4">
                     <div className="flex flex-col items-center text-white">
                         <div className="font-bold text-lg">Phone</div>

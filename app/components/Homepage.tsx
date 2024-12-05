@@ -11,7 +11,7 @@ const words = ["Namaste", "Hello" , "Ciao","Hola", "Bonjour", "Hallo"]
 export default function Homepage() {
     return (
         <>
-            <div className="flex flex-wrap justify-center items-center min-h-screen mx-auto bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 p-4">     
+            <div className="flex flex-wrap justify-center items-center min-h-screen mx-auto bg-[#070F2B] p-4">     
                           
                 
                 <div className="flex justify-center w-full md:w-auto mb-6 md:mb-0">
@@ -38,8 +38,8 @@ export default function Homepage() {
                     </div>                    
                     
                     <div className="px-5 py-3">
-                        <div className="bg-gradient-to-r from-purple-100 via-purple-200 to-purple-400 text-transparent bg-clip-text text-lg md:text-xl font-semibold">A bit about me</div>
-                        <div className="text-gray-300 text-justify font-thin">
+                        <div className="text-[#a1def7] text-lg md:text-xl font-semibold">A bit about me</div>
+                        <div className="text-[#a1def7] text-justify font-thin">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos alias earum veniam totam magnam voluptate, pariatur ducimus facilis, voluptas numquam sint explicabo aperiam expedita deserunt culpa assumenda porro placeat eum?
                         </div>
                     </div>

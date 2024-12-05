@@ -1,12 +1,12 @@
 import Divider from "../Divider"
-import { Meteors } from "../ui/meteors"   
+ 
 import { TitleHeader, WorkCard, EducationCard, AchievementsCard, CertificateCard } from "./ResumeCard"
 
 
 export default function ResumeSection(){
     return <>
     
-        <div className="text-white min-h-screen w-full mx-auto bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 p-4">
+        <div className="text-white min-h-screen w-full mx-auto bg-[#070F2B] p-4">
         <div className="lg:flex">
             <div className="w-1/4">
                 <TitleHeader label="Work Experience" />
@@ -68,7 +68,7 @@ export default function ResumeSection(){
             </div>
         </div>
 
-        <Meteors number={20}/>
+        
         </div>
     </>
 }

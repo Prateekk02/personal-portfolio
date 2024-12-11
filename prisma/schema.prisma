@@ -22,3 +22,92 @@ model Contact {
   message String
   createdAt DateTime @default(now()) 
 }
+
+model User{
+  id Int @id @default(autoincrement())
+  username String 
+  password String
+  linkedin_id String
+  twitter_id String
+  github_id String
+  leetcode_id String
+  email_id String
+  bio String
+  workExp WorkExp[] 
+  education Education[]
+  achievement Achievement[]
+  certificate Certificate[]
+  project Project[]
+}
+
+model WorkExp{
+  id Int @id @default(autoincrement())
+  organization String
+  role String
+  start_date String
+  end_date String
+  visible Boolean @default(false)
+  user_id Int
+  user User @relation(fields: [user_id], references: [id])
+  techStack Tech[] @relation("WorkExpToTable")
+  uploaded_at DateTime @default(now())
+}
+
+model Tech{
+  id Int @id @default(autoincrement())
+  name String @unique
+  description String?
+  workExp WorkExp[] @relation("WorkExpToTable")
+}
+
+model Education{
+  id Int @id @default(autoincrement())
+  organization String
+  date String
+  location String
+  marks String
+  description String 
+  visible Boolean @default(false)
+  user_id Int 
+  user User @relation(fields: [user_id], references: [id])
+  uploaded_at DateTime @default(now())
+}
+
+model Achievement{
+  id Int @id @default(autoincrement())
+  organization String
+  description String?
+  link String
+  show Boolean @default(false)
+  user_id Int
+  user User @relation(fields: [user_id], references: [id])
+  uploaded_at DateTime @default(now())
+}
+
+model Certificate{
+  id Int @id @default(autoincrement())
+  organization String
+  description String?
+  show Boolean @default(false)
+  link String
+  user_id Int
+  user User @relation(fields: [user_id], references: [id])
+  uploaded_at DateTime @default(now())
+}
+
+model Project{
+  id Int @id @default(autoincrement())
+  title String
+  thumbnail_line String
+  description String?
+  key_features String?
+  live_link String?
+  github_link String?
+  show Boolean @default(false)
+  case_study String? 
+  uploaded_at DateTime @default(now())
+  user_id Int
+  user User @relation(fields: [user_id], references: [id])
+}
+
+

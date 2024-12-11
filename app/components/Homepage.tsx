@@ -1,7 +1,8 @@
-import SectionBtn from "./Buttons/SectionBtn";
+// import SectionBtn from "./Buttons/SectionBtn";
 import { Meteors } from "./ui/meteors";
 import { FlipWords } from "./ui/flip-words";
 import Image from "next/image";
+import SocialMediaBar from "./Navbar/SocialMediaBar";
 
 
 const words = ["Namaste", "Hello" , "Ciao","Hola", "Bonjour", "Hallo"]
@@ -14,7 +15,7 @@ export default function Homepage() {
             <div className="flex flex-wrap justify-center items-center min-h-screen mx-auto bg-[#070F2B] p-4">     
                           
                 
-                <div className="flex justify-center w-full md:w-auto mb-6 md:mb-0">
+                <div className="flex justify-center w-full md:w-auto mb-6 md:mb-0 md:outline md:outline-[#67b0cd] outline-none  rounded-full">
                    {/* <img src={"/prateekkumar.png"} alt="Prateek" className="bg-black rounded-full w-48 h-48 md:w-96 md:h-96" /> */}
                     
                     <Image
@@ -44,12 +45,13 @@ export default function Homepage() {
                         </div>
                     </div>
                     
-                    
+                    <div className="w-full h-1 my-3 bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] rounded"></div>
+
                     <div className="flex flex-wrap mt-3 justify-center md:justify-between w-full space-y-4 md:space-y-0">
-                        <SectionBtn label = "Resume" className="opacity-80 text-white bg-purple-600 rounded-full text-lg font-semibold w-32 h-32 md:w-36 md:h-36 flex justify-center items-center hover:bg-purple-300 duration-300 hover:ring hover:ring-purple-600 hover:opacity-100 hover:text-black"/>
-                        <SectionBtn label="Projects" className= "opacity-80 text-white bg-teal-600 rounded-full text-lg font-semibold w-32 h-32 md:w-36 md:h-36 flex justify-center items-center hover:bg-teal-300 duration-300 hover:ring hover:ring-teal-600 hover:opacity-100 hover:text-black"/>
-                        <SectionBtn label="Contact" className="opacity-80 text-white bg-blue-600 rounded-full text-lg font-semibold w-32 h-32 md:w-36 md:h-36 flex justify-center items-center hover:bg-blue-300 duration-300 hover:ring hover:ring-blue-600 hover:opacity-100 hover:text-black"/>
-                       
+                        {/* <SectionBtn label = "Resume" className="opacity-80 text-white bg-purple-600 rounded-full text-lg font-semibold w-32 h-32 md:w-36 md:h-36 flex justify-center items-center hover:bg-purple-300 duration-300 hover:ring hover:ring-purple-600 hover:opacity-100 hover:text-black"/> */}
+                        {/* <SectionBtn label="Projects" className= "opacity-80 text-white bg-teal-600 rounded-full text-lg font-semibold w-32 h-32 md:w-36 md:h-36 flex justify-center items-center hover:bg-teal-300 duration-300 hover:ring hover:ring-teal-600 hover:opacity-100 hover:text-black"/> */}
+                        {/* <SectionBtn label="Contact" className="opacity-80 text-white bg-blue-600 rounded-full text-lg font-semibold w-32 h-32 md:w-36 md:h-36 flex justify-center items-center hover:bg-blue-300 duration-300 hover:ring hover:ring-blue-600 hover:opacity-100 hover:text-black"/> */}
+                        <SocialMediaBar />
                         
                     </div>
                     

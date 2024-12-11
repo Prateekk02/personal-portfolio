@@ -13,14 +13,14 @@ export default function ResumeSection(){
             </div>
             <div className="w-3/4">
                 {/* Database Call to get workcard details  */}
-                <WorkCard organization="Google" role="SDE Intern" date="June-24 to Sept-24" techStack={["TypeScript", "JavaScript", "ReactJS", "Machine Learning"]}>
+                <WorkCard organization="Lorem" role="SDE Intern" date="June-24 to Sept-24" techStack={["TypeScript", "JavaScript", "ReactJS", "Machine Learning"]}>
                     <ul className="list-disc">
                         <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum quasi voluptate esse hic exercitationem repellendus explicabo repudiandae dolore dolorem praesentium iusto, ducimus delectus non quam minus sint libero corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum quasi voluptate esse hic exercitationem repellendus explicabo repudiandae dolore dolorem praesentium iusto, ducimus delectus non quam minus sint libero corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum quasi voluptate esse hic exercitationem repellendus explicabo repudiandae dolore dolorem praesentium iusto, ducimus delectus non quam minus sint libero corporis?</li>
                     </ul>
                 </WorkCard>
-                <WorkCard organization="Google" role="SDE Intern" date="June-24 to Sept-24" techStack={["TypeScript", "JavaScript", "ReactJS", "Machine Learning"]}>
+                <WorkCard organization="Lorem" role="SDE Intern" date="June-24 to Sept-24" techStack={["TypeScript", "JavaScript", "ReactJS", "Machine Learning"]}>
                     <ul className="list-disc">
                         <li >Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum quasi voluptate esse hic exercitationem repellendus explicabo repudiandae dolore dolorem praesentium iusto, ducimus delectus non quam minus sint libero corporis?</li>
                         <li>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut ipsum quasi voluptate esse hic exercitationem repellendus explicabo repudiandae dolore dolorem praesentium iusto, ducimus delectus non quam minus sint libero corporis?</li>

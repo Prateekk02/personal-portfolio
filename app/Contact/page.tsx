@@ -12,20 +12,20 @@ export default function Contact() {
                     <TextSlab
                         title="Contact"
                         content="Excited to hear from you!"
-                        titleClassName="text-5xl text-[#a1def7] font-bold py-2 px-1"
-                        contentClassName="text-lg text-[#a1def7] font-thin py-1 px-2"
+                        titleClassName="text-5xl text-[#a1def7] font-bold py-2 px-1 cursor-default"
+                        contentClassName="text-lg text-[#a1def7] font-thin py-1 px-2 cursor-default"
                     />
                     <TextSlab
                         title="Phone"
                         content="+91 7898853505"
-                        titleClassName="font-bold text-[#a1def7] px-1.5"
-                        contentClassName="text-sm text-[#a1def7] px-1.5"
+                        titleClassName="font-bold text-[#a1def7] px-1.5 cursor-default"
+                        contentClassName="text-sm text-[#a1def7] px-1.5 cursor-default"
                     />
                     <TextSlab
                         title="Email"
                         content="prateekk02.kumar@gmail.com"
-                        titleClassName="font-bold text-[#a1def7] px-1.5"
-                        contentClassName="text-sm text-[#a1def7] px-1.5"
+                        titleClassName="font-bold text-[#a1def7] px-1.5 cursor-default"
+                        contentClassName="text-sm text-[#a1def7] px-1.5 cursor-default"
                     />
                 </div>
 

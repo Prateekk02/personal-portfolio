@@ -12,7 +12,7 @@ export default function Header() {
                 <header className="flex justify-between items-center mx-auto max-w-screen-lg p-4">
                     
                     <div className="flex items-center">
-                        <div className="bg-purple-500 rounded-full h-10 w-10 flex items-center justify-center cursor-pointer m-1 transition-transform duration-300 hover:scale-110">
+                        <div className="bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] rounded-full h-8 w-8 flex items-center justify-center cursor-pointer m-1 transition-transform duration-300 hover:scale-110 animate-pulse">
                             
                         </div>
                         <div onClick={() => router.push('/')} className=" bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] text-transparent bg-clip-text  font-sarif font-bold text-3xl ml-4 cursor-pointer transition-transform duration-300 hover:scale-105">
@@ -40,13 +40,12 @@ export default function Header() {
                     <div className="md:hidden flex items-center">
                         <button
                             onClick={() => setIsMenuOpen(!isMenuOpen)}
-                            className="text-gray-900 focus:outline-none transition-transform duration-300 hover:scale-110"
+                            className="text-[#67b0cd] focus:outline-none transition-transform duration-300 hover:scale-110"
                         >
                             
                             <svg
                                 xmlns="http://www.w3.org/2000/svg"
-                                className="h-8 w-8"
-                                fill="none"
+                                className="h-8 w-8"                               
                                 viewBox="0 0 24 24"
                                 stroke="currentColor"
                             >
@@ -63,15 +62,15 @@ export default function Header() {
 
                 
                 {isMenuOpen && (
-                    <div className="md:hidden bg-gradient-to-r from-gray-700 via-gray-800 to-gray-900 text-white font-semibold flex flex-col items-center space-y-4 py-4">
-                        <div  className="cursor-pointer transition-all duration-300 hover:text-violet-500" onClick={() => setIsMenuOpen(false)}>
+                    <div className="md:hidden bg-[#070F2B]  font-semibold flex flex-col items-center space-y-4 py-4">
+                        <div  className="bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] text-transparent bg-clip-text cursor-pointer transition-all duration-300 hover:text-teal-300" onClick={() => setIsMenuOpen(false)}>
                             <button onClick = {() => router.push('/Resume')}>Resume</button>
                             
                         </div>
-                        <div  className="cursor-pointer transition-all duration-300 hover:text-violet-500" onClick={() => setIsMenuOpen(false)}>
+                        <div  className="bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] text-transparent bg-clip-text cursor-pointer transition-all duration-300 hover:text-teal-300" onClick={() => setIsMenuOpen(false)}>
                             <button onClick = {() => router.push('/Projects')}>Projects</button>
                         </div>
-                        <div  className="cursor-pointer transition-all duration-300 hover:text-violet-500" onClick={() => setIsMenuOpen(false)}>
+                        <div  className="bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] text-transparent bg-clip-text cursor-pointer transition-all duration-300 hover:text-teal-300" onClick={() => setIsMenuOpen(false)}>
                             <button onClick = {() => router.push('/Contact')}>Contact</button>
                         </div>
                     </div>

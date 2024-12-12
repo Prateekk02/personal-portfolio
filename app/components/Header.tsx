@@ -12,9 +12,9 @@ export default function Header() {
                 <header className="flex justify-between items-center mx-auto max-w-screen-lg p-4">
                     
                     <div className="flex items-center">
-                        <div className="bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] rounded-full h-8 w-8 flex items-center justify-center cursor-pointer m-1 transition-transform duration-300 hover:scale-110 animate-pulse">
+                        <button onClick={() => router.push('/Dashboard')} className="bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] rounded-full h-6 w-6 flex items-center justify-center cursor-pointer transition-transform duration-300 hover:scale-110 animate-pulse">
                             
-                        </div>
+                        </button>
                         <div onClick={() => router.push('/')} className=" bg-gradient-to-r from-[#67b0cd] via-[#2ebae9] to-[#afcbf1] text-transparent bg-clip-text  font-sarif font-bold text-3xl ml-4 cursor-pointer transition-transform duration-300 hover:scale-105">
                             Prateek Kumar
                         </div>

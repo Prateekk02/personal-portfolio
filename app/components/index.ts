@@ -15,6 +15,9 @@ import ProjectCardSection from "./ProjectSection/ProjectCardSection";
 import ProjectCard from "./ProjectSection/ProjectCard";
 import Divider from "./Divider";
 import SocialMediaBar from "./Navbar/SocialMediaBar";
+import ClientLayoutWrapper from "./ClientLayoutWrapper";
+import DashboardHeader from "./DashboardComponents/DashboardHeader";
+import DashboardFooter from "./DashboardComponents/DashboardFooter";
  
 
 
@@ -40,4 +43,7 @@ export{
     ProjectCardSection,
     ProjectCard,
     SocialMediaBar,
+    ClientLayoutWrapper,
+    DashboardHeader,
+    DashboardFooter,
 }

@@ -21,6 +21,7 @@ model Contact {
   subject String?
   message String
   createdAt DateTime @default(now()) 
+  seen Boolean @default(false)
 }
 
 model User{

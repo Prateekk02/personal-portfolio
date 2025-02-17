@@ -15,7 +15,7 @@ export default function Homepage() {
             <div className="flex flex-wrap justify-center items-center min-h-screen mx-auto bg-[#070F2B] p-4">     
                           
                 
-                <div className="flex justify-center w-full md:w-auto mb-6 md:mb-0 md:outline md:outline-[#67b0cd] outline-none  rounded-full">
+                <div className="flex justify-center w-full md:w-auto mb-6  rounded-full">
                    {/* <img src={"/prateekkumar.png"} alt="Prateek" className="bg-black rounded-full w-48 h-48 md:w-96 md:h-96" /> */}
                     
                     <Image

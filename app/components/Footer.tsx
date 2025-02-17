@@ -1,32 +1,68 @@
-export default function Footer() {
-    
-    return (
-        <>
-            <div className="bg-[#070F2B] ">
-                <footer className="flex flex-col md:flex-row bg-black h-28 rounded-t-2xl justify-around items-center  bottom-0 left-0 right-0 border-t-2 border-gray-700 max-w-screen mx-auto p-4">
-                    <div className="flex flex-col items-center text-white">
-                        <div className="font-bold text-lg">Phone</div>
-                        <div 
-                            className="text-gray-400 hover:text-white transition duration-200 cursor-pointer"
-                            >+91 7898853505</div>
-                    </div>
-                    <div className="flex flex-col items-center text-white">
-                        <div className="font-bold text-lg">Email</div>
-                        <div className="text-gray-400 hover:text-white transition duration-200 cursor-pointer">prateekk02.kumar@gmail.com</div>
-                    </div>
-                    <div className="flex flex-col items-center text-white">
-                        <div className="font-bold text-lg">Follow Me</div>
-                        <div className="flex space-x-4 mt-1">
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-200">LinkedIn</a>
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-200">GitHub</a>
-                            <a href="#" className="text-gray-400 hover:text-white transition duration-200">Twitter</a>
-                        </div>
-                    </div>
-                    <div className="text-center text-white mt-2 text-sm border-b border-gray-700 pt-2">
-                        &copy; {new Date().getFullYear()} Prateek Kumar. All rights reserved.
-                    </div>
-                </footer>
-            </div>
-        </>
-    );
-}
+import React from "react";
+
+const Footer = () => {
+  return (
+    <footer className="bg-[#070F2B] text-gray-400 py-6">
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+        {/* Footer Content */}
+        <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
+          {/* Personal Note */}
+          <div className="text-center md:text-left">
+            <p className="text-sm">
+              Built with 💻 and ☕ by{" "}
+              <span className="text-gray-100 font-semibold">
+                Prateek Kumar
+              </span>
+            </p>
+          </div>
+
+          {/* Links Section */}
+          <div className="flex flex-col md:flex-row space-y-2 md:space-y-0 md:space-x-6 text-center md:text-left">
+            <a
+              href="https://github.com/codeWalker66"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              GitHub
+            </a>
+            <a
+              href="https://www.linkedin.com/in/prateekk02"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              LinkedIn
+            </a>
+            <a
+              href="https://leetcode.com/codeWalker66"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              LeetCode
+            </a>
+            <a
+              href="https://kaggle.com/Prateekk0"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-white"
+            >
+              Kaggle
+            </a>
+          </div>
+
+          {/* Copyright Section */}
+          <div className="text-center md:text-right">
+            <p className="text-sm">
+              &copy; {new Date().getFullYear()} Prateek Kumar. All rights
+              reserved.
+            </p>
+          </div>
+        </div>
+      </div>
+    </footer>
+  );
+};
+
+export default Footer;

@@ -24,16 +24,21 @@ model Contact {
   seen Boolean @default(false)
 }
 
+enum UserRole {
+  ADMIN
+  USER
+}
 model User{
   id Int @id @default(autoincrement())
-  username String 
+  username String @unique
   password String
-  linkedin_id String
-  twitter_id String
-  github_id String
-  leetcode_id String
-  email_id String
-  bio String
+  role UserRole @default(USER)
+  linkedin_id String?
+  twitter_id String?
+  github_id String?
+  leetcode_id String?
+  email_id String?
+  bio String?
   workExp WorkExp[] 
   education Education[]
   achievement Achievement[]

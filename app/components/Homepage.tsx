@@ -3,16 +3,11 @@ import { Meteors } from "./ui/meteors";
 import { FlipWords } from "./ui/flip-words";
 import Image from "next/image";
 import SocialMediaBar from "./Navbar/SocialMediaBar";
-
-
 const words = ["Namaste", "Hello" , "Ciao","Hola", "Bonjour", "Hallo"]
-
-
-
 export default function Homepage() {
     return (
         <>
-            <div className="flex flex-wrap justify-center items-center min-h-screen mx-auto bg-[#070F2B] p-4">     
+            <div className="flex flex-wrap justify-center items-center min-h-screen mx-auto bg-[#070F2B] p-4"> 
                           
                 
                 <div className="flex justify-center w-full md:w-auto mb-6  rounded-full">

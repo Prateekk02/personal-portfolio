@@ -5,7 +5,7 @@ import { NextAuthOptions } from 'next-auth';
 import prisma from '@/db';
 
 
-const authOption: NextAuthOptions =  {
+export const authOption: NextAuthOptions =  {
 
     providers:[
         CredentialsProvider({

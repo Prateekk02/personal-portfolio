@@ -2,7 +2,7 @@ import { getServerSession } from "next-auth";
 import { authOption } from "@/app/api/auth/[...nextauth]/options";
 import { fetchUserData, updateUserData } from "../lib/data";
 import { redirect } from "next/navigation";
-import { FormComponent } from "../components";
+import { DashboardContent } from "../components";
 
 async function Dashboard() {
   // Fetch session
@@ -16,20 +16,20 @@ async function Dashboard() {
   }
 
   // Update user data
-  const handleFormSubmit = async (formData:FormData) => {
-    "use server"   
+  const handleFormSubmit = async (formData: FormData) => {
+    "use server";
 
     const updates = {
-      bio: formData.get('bio') as string | null,
-      linkedin_id: formData.get("linkedin_id") as string | null,
-      twitter_id: formData.get("twitter_id") as string | null,
-      github_id: formData.get("github_id") as string | null,
-      email_id: formData.get("email_id") as string | null,
-      leetcode_id: formData.get("leetcode_id") as string | null,
-    }
+      bio: formData.get("bio") as string | null,
+      linkedin_id: formData.get("linkedin") as string | null,
+      twitter_id: formData.get("twitter") as string | null,
+      github_id: formData.get("github") as string | null,
+      email_id: formData.get("email") as string | null,
+      leetcode_id: formData.get("leetcode") as string | null,
+    };
 
     const filteredUpdates = Object.fromEntries(
-      Object.entries(updates).filter(([_, v]) => v !== null)
+      Object.entries(updates).filter(([, v]) => v !== null)
     ) as Partial<{
       linkedin_id: string;
       twitter_id: string;
@@ -37,34 +37,26 @@ async function Dashboard() {
       email_id: string;
       bio: string;
       leetcode_id: string;
-    }>; 
+    }>;
 
-    await updateUserData(session, username, filteredUpdates );
+    await updateUserData(session, username, filteredUpdates);
   };
-  
+
   // Fetch user data
   const userData = await fetchUserData(username);
 
   // Ensure userData exists before destructuring
   if (!userData) {
-    return <div className="text-center text-red-500">Error: User data not found.</div>;
+    return (
+      <div className="text-center text-red-500">
+        Error: User data not found.
+      </div>
+    );
   }
-
-  const { linkedin_id, twitter_id, github_id, email_id, leetcode_id, bio } = userData;
+ 
 
   return (
-    <div className="flex flex-col items-center justify-center text-xl">
-      <div className="">
-      {linkedin_id ? <p>LinkedIn: <a href={linkedin_id} target="_blank">{linkedin_id}</a></p> : <p>No LinkedIn profile</p>}
-      {twitter_id ? <p>Twitter: <a href={twitter_id} target="_blank">{twitter_id}</a></p> : <p>No Twitter profile</p>}
-      {github_id ? <p>GitHub: <a href={github_id} target="_blank">{github_id}</a></p> : <p>No GitHub profile</p>}
-      {leetcode_id ? <p>Leetcode: <a href={leetcode_id} target="_blank">{leetcode_id}</a></p> : <p>No Leetcode profile</p>}
-      {email_id ? <p>Email: {email_id}</p> : <p>No Email provided</p>}
-      {bio ? <p>Bio: {bio}</p> : <p>No bio available</p>}
-      </div>   
-      <FormComponent onSubmit={handleFormSubmit} />
-    </div>   
-    
+    <DashboardContent initialUserData={userData} onSubmit={handleFormSubmit} />   
   );
 }
 

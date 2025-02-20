@@ -19,11 +19,7 @@ import ClientLayoutWrapper from "./ClientLayoutWrapper";
 import DashboardHeader from "./DashboardComponents/DashboardHeader";
 import MessageBox from "./DashboardComponents/MessageBox";
 import DashboardSidebar from "./DashboardComponents/DashboardSidebar";
-import FormComponent from "./DashboardComponents/FormComponent";
-
- 
-
-
+import DashboardContent from "./DashboardComponents/DashboardContent";
 export{
     Header, 
     Footer,
@@ -50,6 +46,6 @@ export{
     DashboardHeader,
     MessageBox,
     DashboardSidebar,
-    FormComponent,  
+    DashboardContent,   
     
 }
